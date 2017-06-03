@@ -1,0 +1,8 @@
+[submodule "apps/hellomars/site_scons"]
+	path = apps/hellomars/site_scons
+	url = https://github.com/eyob-boye/makoo_site_scons.git
+	branch = master
+[submodule "apps/helloearth/site_scons"]
+	path = apps/helloearth/site_scons
+	url = https://github.com/eyob-boye/makoo_site_scons.git
+	branch = master
