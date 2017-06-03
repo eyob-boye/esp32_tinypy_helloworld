@@ -1,0 +1,17 @@
+#-----------------------------------------------------------------------------
+#  Configuration
+#-----------------------------------------------------------------------------
+COMPONENT_NAME = "esp32_tinypy_helloworld"
+
+IMPORTED_COMPONENTS = [
+("#imported/tinypy-master", 'https://github.com/eyob-boye/tinypy.git', "master"),
+]
+
+TPY_MODULES = [ "./source"]
+
+#-----------------------------------------------------------------------------
+#  Call shared common script
+#-----------------------------------------------------------------------------
+SConscript(MakooSiteSconsGetPath("esp_idf_project.scons")",
+           exports=['COMPONENT_NAME', 'IMPORTED_COMPONENTS', 'TPY_MODULES'])
+

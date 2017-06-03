@@ -1,0 +1,11 @@
+build/*
+build/
+imported/*
+imported/
+.sconsign.dblite
+Makefile
+makefile
+site_scons/*
+site_scons/
+*.pyc
+*.tpc

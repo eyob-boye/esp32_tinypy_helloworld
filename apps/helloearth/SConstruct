@@ -1,0 +1,18 @@
+#-----------------------------------------------------------------------------
+#  Configuration
+#-----------------------------------------------------------------------------
+COMPONENT_NAME = "helloearth"
+
+IMPORTED_COMPONENTS = [
+("#imported/esp-idf-master", 'https://github.com/espressif/esp-idf.git', "master"),
+("#imported/tinypy-master",  'https://github.com/eyob-boye/tinypy.git',  "master"),
+(None,                       '#../..', None)
+]
+
+
+#-----------------------------------------------------------------------------
+#  Call shared common script
+#-----------------------------------------------------------------------------
+SConscript(MakooSiteSconsGetPath("esp_idf_project.scons"),
+           exports=['COMPONENT_NAME', 'IMPORTED_COMPONENTS'])
+
