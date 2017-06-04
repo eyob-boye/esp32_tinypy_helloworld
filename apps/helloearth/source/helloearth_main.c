@@ -12,6 +12,11 @@ void helloearth_task(void *pvParameter)
     for(;;) {
       printf("Hello Earth!\n");
       TpApp_mainFunction();
+      //{
+      //    double cobra = 0;
+      //    cobra = tp_get(TpAppVm, TpAppModule_test1, tp_string("cobra")).number.val;
+      //    printf("helloearth_task: cobra=%f\n", cobra);
+      //}
       for (int i = 10; i >= 0; i--) {
           printf("Restarting in %d seconds...\n", i);
           vTaskDelay(1000 / portTICK_PERIOD_MS);
