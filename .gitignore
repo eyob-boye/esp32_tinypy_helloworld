@@ -9,3 +9,4 @@ site_scons/*
 site_scons/
 *.pyc
 *.tpc
+*.old
