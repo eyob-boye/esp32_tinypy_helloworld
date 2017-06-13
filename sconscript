@@ -12,6 +12,6 @@ TPY_MODULES = [ "./source"]
 #-----------------------------------------------------------------------------
 #  Call shared common script
 #-----------------------------------------------------------------------------
-SConscript(MakooSiteSconsGetPath("esp_idf_project.scons"),
+SConscript(MakooCommonScript(),
            exports=['COMPONENT_NAME', 'IMPORTED_COMPONENTS', 'TPY_MODULES'])
 

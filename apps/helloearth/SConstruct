@@ -13,6 +13,6 @@ IMPORTED_COMPONENTS = [
 #-----------------------------------------------------------------------------
 #  Call shared common script
 #-----------------------------------------------------------------------------
-SConscript(MakooSiteSconsGetPath("esp_idf_project.scons"),
+SConscript(MakooCommonScript("esp_idf"),
            exports=['COMPONENT_NAME', 'IMPORTED_COMPONENTS'])
 
