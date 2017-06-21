@@ -70,8 +70,9 @@ the imported module to be already loaded in tinypy global module name space.
 
 Once Makoo is complete, then you can run `make flash` to let loose
 the esp-idf build system. Note that, before you run `make flash` make sure that
-tools required by the esp-idf are available from the command line. It might be
-of interest to you now I do it
+tools required by the esp-idf are available from the command line. I for example
+run the `prepare_shell_path.bat` to add the compiler and tools on the path. Take
+a look a this file for some details.
 
 How does scons know how to do all of this?
 - "scons" does not know anything about components. But we have extended scons
