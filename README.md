@@ -87,4 +87,4 @@ Why not use git submodule feature to manage dependencies?
 component dependencies in a complex way. I am not sure what git would
 do if there are circular dependencies for example. Path management 
 can also become weird when dealing with deep dependencies or common
-dependencies. Makoo uses git submodule only for to get makoo_site_scons.
+dependencies. Makoo uses git submodule only to get makoo_site_scons.
